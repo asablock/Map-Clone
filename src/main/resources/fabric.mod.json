@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "mapclone",
+  "version": "${version}",
+
+  "name": "Map Clone",
+  "description": "This mod add a button named by \"Clone Map\" in singleplayer menu",
+  "authors": [
+    "asablock"
+  ],
+  "contact": {
+    "homepage": "",
+    "sources": "https://github.com/asablock/Map-Clone"
+  },
+
+  "license": "CC0-1.0",
+  "icon": "assets/mapclone/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "com.github.asablock.ClientMapCloneMod"
+    ]
+  },
+  "mixins": [
+    "mapclone.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.12.12",
+    "fabric": "*",
+    "minecraft": "1.16.5",
+    "java": ">=8"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
